@@ -4,9 +4,9 @@ const authMiddleware = require('../middleware/authMiddleware');
 
 const router = express.Router();
 
-router.post('/crear', authMiddleware, crearJunta);
-router.get('/buscar', authMiddleware, buscarJuntas);
-router.post('/unirse', authMiddleware, unirseJunta);
-router.get('/', authMiddleware, obtenerJuntas);
+router.post('/crear', crearJunta);
+router.get('/buscar', buscarJuntas);
+router.post('/unirse', unirseJunta);
+router.get('/', obtenerJuntas);
 
 module.exports = router;
