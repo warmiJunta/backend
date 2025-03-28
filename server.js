@@ -23,6 +23,7 @@ app.use('/api/users', userRoutes);
 app.use('/api/juntas', juntaRoutes);
 
 // Iniciar el servidor
+const PORT = 5000; // Definir el puerto
 app.listen(PORT, '0.0.0.0', () => {
   console.log(`Server running on port ${PORT}`);
 });
