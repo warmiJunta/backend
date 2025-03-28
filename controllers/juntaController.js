@@ -1,5 +1,5 @@
-const Junta = require('../models/Juntas');
-const User = require('../models/User');
+const Junta = require('../models/juntas');
+const User = require('../models/user');
 
 // Crear una nueva junta
 const crearJunta = async (req, res) => {
